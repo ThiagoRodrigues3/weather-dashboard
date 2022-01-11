@@ -1,7 +1,7 @@
 // ==> DOM ELEMENTS <== 
 // ==> user input <==
 const searchedButtons = document.querySelector('#search-buttons')
-const searchButton = document.querySelector('#city-search-btn');
+const searchButton = document.querySelector('#city-search-button');
 const searchInput = document.querySelector('#city-search');
 const searchedCitiesButton = document.querySelectorAll('.searched-cities-btn')
 // ==> main card <==
@@ -35,7 +35,6 @@ fetchCoordinates = () => {
 
     fetch(`${weatherApiUrl}${geocodingEndpoint}${apiParam}${weatherApiKey}`)
     .then(function (response) {
-        console.log(please)
         return response.json();
     })
     .then(function (data) {
@@ -132,14 +131,6 @@ renderSearchHistory = () => {
 
 };
 
-searchButton.addEventListener('click', function (event) {
-    event.preventDefault();
-
-    cityName = searchInput.value.toLowerCase().trim();
-    fetchCoordinates();
-
-    searchInput.value = '';
-});
 
 init = () => {
     mainCardDate.textContent = `${today}`
@@ -148,3 +139,13 @@ init = () => {
 }
 
 init();
+
+
+searchButton.addEventListener('click', function (event) {
+    event.preventDefault();
+
+    cityName = searchInput.value.toLowerCase().trim();
+    fetchCoordinates();
+
+    searchInput.value = '';
+});
