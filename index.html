@@ -21,27 +21,22 @@
     <div class="container-fluid">
         <div class="row">
 
-            <!--  ==> City Select column <== -->
             <div class= "col-12 col-sm-12 col-md-12 col-lg-3"">
                 <div id="search-card" class= "card px-4 py-4 bg-dark text-light">
                     <h2>Search For Your City Here:</h2>
-                    <!-- ==> Search Form <== -->
                     <form class= "border-bottom mb-2">
                         <input type="text" class="form-control mb-2" id="city-search" placeholder="Enter City Here" autocomplete="off">
                         <button class="btn btn-primary btn-block mb-2" id="city-search-button">Search</button>
                     </form>
-                    <!-- ==> Search History <== -->
                     <div id="search-buttons"></div>
                 </div>
             </div>
-
-            <!--  ==> Information Display <==  -->
+<!-- ==> Main Weather Dashboard <== -->
             <div class="col-12 col-md-12 col-lg-9">
                 <div class="row p-3 m-1">
-                    <!-- ==> Todays Forecast <== -->
-                    <div id="main-card" class="card col-12 text-light p-3">
+                    <div id="main-card" class="card col-12 text-light">
                         <div class="row">
-                            <div class="col-12 col-lg-4 text center p-4">
+                            <div class="col-12 col-lg-4 text center p-2">
                                 <h2><span id="main-card-city"></span><span id="main-card-date"></span></h2>
                                 <img id="main-card-icon">
                             </div>
@@ -75,10 +70,10 @@
 
                 <!-- ==> 5 Day Forecast Cards <== -->
                 <div class="container col-12">
-                    <div class="row d-flex justify-content-around m-1">
+                    <div class="row d-flex justify-content-around ">
                         <h3 class="col-12">5-Day Forecast</h3>
                         <!-- DAY 1 -->
-                        <div class="col-12 col-sm-12 col-md-3 col-lg-2 card text-light p-2 m-1 forecast-card">
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-2 card text-light p-2 forecast-card">
                             <h4 class="forecast-date"></h4>
                             <img class="forecast-icon">
                             <p>Temp: <span class="forecast-temp"></span></p>
@@ -87,7 +82,7 @@
                         </div>
     
                         <!-- DAY 2 -->
-                        <div class="col-12 col-sm-12 col-md-3 col-lg-2 card text-light p-2 m-1 forecast-card">
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-2 card text-light p-2 forecast-card">
                             <h4 class="forecast-date"></h4>
                             <img class="forecast-icon">
                             <p>Temp: <span class="forecast-temp"></span></p>
@@ -96,7 +91,7 @@
                         </div>
     
                         <!-- DAY 3 -->
-                        <div class="col-12 col-sm-12 col-md-3 col-lg-2 card text-light p-2 m-1 forecast-card">
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-2 card text-light p-2 forecast-card">
                             <h4 class="forecast-date"></h4>
                             <img class="forecast-icon">
                             <p>Temp: <span class="forecast-temp"></span></p>
@@ -105,7 +100,7 @@
                         </div>
     
                         <!-- DAY 4 -->
-                        <div class="col-12 col-sm-12 col-md-3 col-lg-2 card text-light p-2 m-1 forecast-card">
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-2 card text-light p-2 forecast-card">
                             <h4 class="forecast-date"></h4>
                             <img class="forecast-icon">
                             <p>Temp: <span class="forecast-temp"></span></p>
@@ -114,7 +109,7 @@
                         </div>
     
                         <!-- DAY 5 -->
-                        <div class="col-12 col-sm-12 col-md-3 col-lg-2 card text-light p-2 m-1 forecast-card">
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-2 card text-light p-2 forecast-card">
                             <h4 class="forecast-date"></h4>
                             <img class="forecast-icon">
                             <p>Temp: <span class="forecast-temp"></span></p>
@@ -128,7 +123,7 @@
     </div>
     
 
-    <footer class="fixed-bottom ">
+    <footer class="custom-footer">
         <a href="https://www.linkedin.com/in/thiago-rodrigues-b68a2198/" target="_blank" rel="noopener noreferrer"><img src="./assets/images/linkedin.png" alt="LinkedIn Logo" class="mx-5"></a>
         <a href="https://www.github.com/ThiagoRodrigues3" target="_blank" rel="noopener noreferrer"><img src="./assets/images/GitHub-Mark-64px.png" alt="GitHub logo" class="mx-5"></a>
         <a href="https://stackoverflow.com/users/story/17347278?newreg=c268ad4851324aecb63947870c4ca845&_=1" target="_blank" rel="noopener noreferrer"><img src="./assets/images/stackoverflow.png" alt="Stackoverflow Logo" class="mx-5"></a>

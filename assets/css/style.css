@@ -13,7 +13,6 @@ a:visited {
   background-image: linear-gradient(to left, #6d9f71, #337357);
 }
 
-/* ==> Main Card <== */
 #main-card,
 .forecast-card,
 .search-card {
@@ -42,7 +41,6 @@ a:visited {
   font-size: 120%;
 }
 
-/* ==> Forecast Cards <== */
 .forecast-card {
   background-image: linear-gradient(160deg, #6d9f71, #337357);
   opacity: 1;
@@ -71,10 +69,12 @@ a:visited {
   font-size: 125%;
 }
 
-/* UV INDEX */
+/* UV INDEX According to Wikipedia*/
 
-.favorable,
+.low,
 .moderate,
+.high,
+.very-high,
 .severe {
   font-weight: bold;
   text-align: center;
@@ -83,16 +83,28 @@ a:visited {
   border-radius: 8px;
 }
 
-.favorable {
-  background-color: #299501;
+.low {
+  background-color: green;
 }
 
 .moderate {
-  background-color: #cea009;
+  background-color: yellow;
+}
+
+.high {
+  background: orange;
+}
+
+.very-high {
+  background: red;
 }
 
 .severe {
-  background: #bd0713;
+  background: #B567A4;
+}
+
+.custom-footer {
+  height: 5vh;
 }
 
 footer {
@@ -105,7 +117,7 @@ footer {
 }
 
 footer img {
-  width: 50px;
+  width: 25px;
   transition: transform 1s;
 }
 
